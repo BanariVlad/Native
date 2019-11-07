@@ -396,46 +396,6 @@ li{
     border-radius: 20px;
 }
 
-/* =====================BG-MAN================= */
-
-/* .headphones-full-width{
-    display: grid;
-    grid: repeat(5, 1fr)/repeat(5, 1fr);
-    place-items: center;
-}
-
-.headphones-full-width img{
-    width: 100%;
-    grid-area: 1/1/6/6;
-}
-
-.headphones-banner{
-    display: grid;
-    height: 50%;
-    width: 50%;
-    grid: repeat(3, 1fr)/repeat(3, 1fr);
-    color: #fff;
-    grid-area: 1/4/6/6;
-    z-index: 5;
-    place-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-}
-
-.headphones-banner h4{
-    grid-area: 1/1/2/4;
-}
-
-.headphones-banner span{
-    grid-column: 1/4;
-    text-align: center;
-}
-
-.headphones-banner button{
-    color: #fff;
-    grid-area: 3/1/4/4;
-} */
-
 /* ============RECOMMENDATIONS============= */
 
 h3{
@@ -475,7 +435,7 @@ h3{
 }
 
 .recommend li:nth-child(4) img{
-    height: 40%;
+    height: 30%;
 }
 
 .recommend li h5{
@@ -546,11 +506,46 @@ h3{
 
 
 
+/* ========APPLE PRODUCTION====== */
 
 
+ .headphones-full-width{
+    display: grid;
+    grid: repeat(5, 1fr)/repeat(5, 1fr);
+    place-items: center;
+}
 
+.headphones-full-width img{
+    width: 100%;
+    grid-area: 1/1/6/6;
+}
 
+.headphones-banner{
+    display: grid;
+    height: 50%;
+    width: 50%;
+    grid: repeat(3, 1fr)/repeat(3, 1fr);
+    color: #fff;
+    grid-area: 1/1/6/3;
+    z-index: 5;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
 
+.headphones-banner h4{
+    grid-area: 1/1/2/4;
+}
+
+.headphones-banner span{
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.headphones-banner button{
+    color: #fff;
+    grid-area: 3/1/4/4;
+} 
 
 
 
