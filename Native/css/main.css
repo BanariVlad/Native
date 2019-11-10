@@ -549,7 +549,7 @@ h3{
 } 
 
 
-/* ========APPLE SLIDER=========== */
+/* ========APPLE SLIDERS=========== */
 
 .owl-stage-outer{
     padding: 10px;
@@ -650,6 +650,60 @@ h3{
     margin: 0;
     color: #fff;
 }
+
+
+/*===============WRAPPER=============== */
+
+section input{
+    display: none;
+}
+
+section input:checked + label{
+    color: #18CFAB;
+}
+
+.apple-content{
+    position: relative;
+}
+
+label{
+    cursor: pointer;
+}
+
+.owl-stage, .owl-dots, .owl-stage-outer{
+    display: none;
+}
+
+#apple-tab-1:checked ~ .apple-content .iPhones .owl-stage, #apple-tab-1:checked ~ .apple-content .iPhones .owl-dots,
+#apple-tab-1:checked ~ .apple-content .iPhones .owl-stage-outer{
+    display: block;
+}
+
+#apple-tab-2:checked ~ .apple-content .iPads .owl-stage, #apple-tab-2:checked ~ .apple-content .iPads .owl-dots,
+#apple-tab-2:checked ~ .apple-content .iPads .owl-stage-outer{
+    display: block;
+}
+
+#apple-tab-3:checked ~ .apple-content .apple-gadgets .owl-stage, #apple-tab-3:checked ~ .apple-content .apple-gadgets .owl-dots,
+#apple-tab-3:checked ~ .apple-content .apple-gadgets .owl-stage-outer{
+    display: block;
+}
+
+#apple-tab-4:checked ~ .apple-content .MacBooks .owl-stage, #apple-tab-4:checked ~ .apple-content .MacBooks .owl-dots,
+#apple-tab-4:checked ~ .apple-content .MacBooks .owl-stage-outer{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1600px){
     section, .top-nav, .top-panel{
