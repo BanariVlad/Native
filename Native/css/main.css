@@ -13,8 +13,9 @@ a{
 
 /*================HEADER============*/
 
-.menu, .stock, .fotorama, .hot, .banner-1, .banner-2, .bestsellers li, .recommend li{
+.menu, .stock, .fotorama, .hot, .banner-1, .banner-2, .bestsellers li, .recommend li, .owl-grid{
     border-radius: 20px;
+    background: #fff;
     box-shadow: 1px 1px 5px 1px #aeaeae;
 }
 
@@ -548,12 +549,107 @@ h3{
 } 
 
 
+/* ========APPLE SLIDER=========== */
 
+.owl-stage-outer{
+    padding: 10px;
+}
 
+.owl-grid{
+    display: grid;
+    grid: repeat(9, 1fr)/repeat(3, 1fr);
+    height: 350px;
+    place-items: center;
+    margin: 15px;
+    transition: 0.3s;
+}
 
+.owl-grid img{
+    grid-area: 2/1/8/4;
+}
 
+.owl-grid h4{
+    grid-column: 1/4;
+}
 
+.owl-grid span{
+    grid-area: 8/1/9/2;
+    color: ;
+}
 
+.owl-grid div{
+    grid-area: 8/3/9/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #bebebe;
+    border-radius: 50%;
+}
+
+.owl-grid div i{
+    color: #bebebe;
+    font-size: 15px;
+}
+
+.owl-grid div:hover{
+    border-color: #FC8507;
+}
+
+.owl-grid div:hover i{
+    color: #FC8507;
+}
+
+.owl-grid hr{
+    grid-area: 9/1/9/4;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.owl-grid p{
+    grid-area: 9/1/10/4;
+    text-align: center;
+    color: #bebebe;
+}
+
+.owl-grid:hover{
+   transform: translateY(-10px);
+   box-shadow: 1px 1px 5px 1px #1C2A33;
+   cursor: pointer;
+}
+
+.owl-grid .cashback{
+    grid-area: 2/1/4/3;
+    width: 80%;
+    background-color: rgba(24,206,170, 0.7);
+}
+
+.owl-grid .credit{
+    grid-area: 4/1/5/3;
+    width: 60%;
+    background-color: rgba(213,79,139, 0.7);
+}
+
+.owl-grid .new{
+    grid-area: 5/1/7/3;
+    width: 40%;
+    background-color: rgba(85,173,245, 0.7);
+}
+
+.owl-grid .cashback , .owl-grid .credit, .owl-grid .new{
+    border-radius: 0;
+    z-index: 5;
+    height: 35px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    justify-self: flex-start;
+    margin: 0;
+    color: #fff;
+}
 
 @media screen and (max-width: 1600px){
     section, .top-nav, .top-panel{
