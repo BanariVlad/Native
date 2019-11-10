@@ -652,56 +652,29 @@ h3{
 }
 
 
-/*===============WRAPPER=============== */
+/*===============Tabs=============== */
 
-section input{
-    display: none;
+.Apple-Nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    border-bottom: 1px solid #18CFAB;
 }
 
-section input:checked + label{
-    color: #18CFAB;
-}
-
-.apple-content{
-    position: relative;
-}
-
-label{
+.Apple-Nav li{
     cursor: pointer;
-}
-
-.owl-stage, .owl-dots, .owl-stage-outer{
-    display: none;
-}
-
-#apple-tab-1:checked ~ .apple-content .iPhones .owl-stage, #apple-tab-1:checked ~ .apple-content .iPhones .owl-dots,
-#apple-tab-1:checked ~ .apple-content .iPhones .owl-stage-outer{
-    display: block;
-}
-
-#apple-tab-2:checked ~ .apple-content .iPads .owl-stage, #apple-tab-2:checked ~ .apple-content .iPads .owl-dots,
-#apple-tab-2:checked ~ .apple-content .iPads .owl-stage-outer{
-    display: block;
-}
-
-#apple-tab-3:checked ~ .apple-content .apple-gadgets .owl-stage, #apple-tab-3:checked ~ .apple-content .apple-gadgets .owl-dots,
-#apple-tab-3:checked ~ .apple-content .apple-gadgets .owl-stage-outer{
-    display: block;
-}
-
-#apple-tab-4:checked ~ .apple-content .MacBooks .owl-stage, #apple-tab-4:checked ~ .apple-content .MacBooks .owl-dots,
-#apple-tab-4:checked ~ .apple-content .MacBooks .owl-stage-outer{
-    display: block;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 
-
-
-
-
-
-
-
+li.active{
+    background: #18CFAB;
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    transition: .3s;
+}
 
 
 
