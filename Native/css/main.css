@@ -161,6 +161,17 @@ li{
 .menu li:hover{
     background: #f6f6f6;
 }
+
+/* ====================POPUP======================= */
+
+.smartphones{
+    grid-area: 1/3/13/9;
+    z-index: 2;
+    border: 2px solid red;
+    display: none;
+}
+
+
 /* ===================FOTORAMA SLIDER==================== */
 .fotorama{
     grid-area: 1/3/5/7;
