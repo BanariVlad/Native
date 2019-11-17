@@ -2,23 +2,6 @@ $(document).ready(function(){
 
     AppleTabs();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 });
 
 

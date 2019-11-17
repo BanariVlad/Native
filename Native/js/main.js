@@ -1,6 +1,8 @@
 $(document).ready(function () {
     PopUpHide();
     LeftMainMenuPopUp();
+    PopUpLoginHide();
+    PopUpLogin();
 
 })
 
@@ -172,4 +174,19 @@ function LeftMainMenuPopUp() {
 
 function PopUpHide(){
     $('.popup').hide();
+}
+
+function PopUpLoginHide(){
+    $('.popupLogin').hide();
+}
+
+function PopUpLogin(){
+    $('.top-panel .top-login span a').click(function (){
+        $('.popupLogin').show();
+        $('body').css('overflow', 'hidden');
+    })
+    $('.LoginWindow i').click(function (){
+        $('.popupLogin').hide();
+        $('body').css('overflow' , 'visible')
+    })
 }
