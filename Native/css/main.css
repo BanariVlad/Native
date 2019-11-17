@@ -13,7 +13,7 @@ a{
 
 /*================HEADER============*/
 
-.menu, .stock, .fotorama, .hot, .banner-1, .banner-2, .bestsellers li, .recommend li, .owl-grid{
+.menu, .stock, .fotorama, .hot, .banner-1, .banner-2, .bestsellers li, .recommend li, .owl-grid, .popup{
     border-radius: 20px;
     background: #fff;
     box-shadow: 1px 1px 5px 1px #aeaeae;
@@ -514,7 +514,7 @@ h3{
  .headphones-full-width{
     display: grid;
     grid: repeat(5, 1fr)/repeat(5, 1fr);
-    place-items: center;
+    align-items: center;
 }
 
 .headphones-full-width img{
@@ -528,7 +528,7 @@ h3{
     width: 50%;
     grid: repeat(3, 1fr)/repeat(3, 1fr);
     color: #fff;
-    grid-area: 1/1/6/3;
+    grid-area: 1/2/6/4;
     z-index: 5;
     place-items: center;
     background-color: rgba(0, 0, 0, 0.3);

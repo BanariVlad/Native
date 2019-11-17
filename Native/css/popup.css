@@ -1,14 +1,183 @@
 .popup{
-    position: relative;
-    left: -20px;
-    grid-area: 1/3/13/9;
     z-index: 2;
-    border: 2px solid red;
-    color: red;
+    position: relative;
+    left: -18px;
     border-radius: 20px;
-}
-
-.smartphones{
+    padding: 20px;
+    justify-items: center;
     display: grid;
     grid: repeat(3, 1fr)/repeat(3, 1fr);
+    row-gap: 20px;
+    background: #fff;
+    border: 1px groove #18CCA8;
+}
+
+.popup article h4{
+    font-size: 16px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.popup article h4:hover{
+    color: #18CCA8;
+}
+
+.popup article ul{
+    margin-top: 15px;
+    display: grid;
+    row-gap: 5px;
+}
+
+.popup article ul li a{
+    color: #a4a4a4;
+    font-size: 14px;
+}
+
+.popup article ul li a:hover{
+    color: #262626;
+}
+
+/* SMARTPOHNES */
+
+.smartphones{
+    grid-area: 1/3/13/9;
+    height: 65%;
+}
+
+.smartphones article:first-child{
+    grid-row: 1/2;
+}
+
+.smartphones article:nth-child(2){
+    grid-row: 1/2;
+}
+
+.smartphones article:nth-child(3){
+    grid-row: 1/4;
+}
+
+/* TV */
+
+.tv{
+    grid-area: 2/3/13/9;
+    height: 70%;
+    width: 60%;
+}
+
+.tv article:first-child{
+    grid-row: 1/4;
+}
+
+.tv article:nth-child(2){
+    grid-area: 1/2/3/4;
+}
+
+.tv article:last-child{
+    grid-area: 2/2/4/4;
+}
+
+/* KEYBOARDS */
+
+.keyboards{
+    grid-area: 3/3/13/9;
+    height: 60%;
+}
+
+.keyboards h2{
+    grid-area: 1/2/2/3;
+    color: #18CCA8;
+}
+
+.keyboards article{
+    grid-row: 1/3;
+}
+
+/* GAMING */
+
+.gaming{
+    grid-area: 4/3/13/9;
+    width: 60%;
+}
+
+.gaming article:first-child{
+    grid-row: 1/4;
+}
+
+.gaming article:nth-child(2){
+    grid-area: 1/2/2/4;
+}
+
+.gaming article:last-child{
+    grid-area: 2/2/4/4;
+}
+
+/* TRANSPORT */
+
+.transport{
+    grid-area: 5/3/13/9;
+    width: 60%;
+    grid-auto-flow: column;
+}
+
+.transport article:last-child{
+    grid-area: 1/2/3/4;
+    align-self: center;
+}
+
+/* APPLE */
+
+.apple{
+    grid-area: 6/3/13/9;
+    height: 80%;
+}
+
+.apple article:first-child{
+    grid-row: 1/4;
+}
+
+.apple article:last-child{
+    grid-column: 2/4;
+}
+
+/* GADGETS */
+
+.gadgets{
+    grid-area: 7/3/13/9;
+}
+
+.gadgets article:nth-last-child(2){
+    grid-area: 2/1/4/3;
+}
+
+.gadgets article:last-child{
+    grid-area: 2/2/4/4;
+}
+
+/* COMPUTERS */
+
+.computers{
+    grid-area: 5/3/13/9;
+    height: 90%;
+}
+
+/* Audio */
+
+.audio{
+    grid-area: 8/3/13/9;
+    width: 40%;
+    height: 90%;
+}
+
+.audio article{
+    grid-row: 1/4;
+}
+
+.audio article:last-child{
+    grid-column: 2/4;
+}
+
+/* SERVICES */
+
+.services{
+    grid-area: 8/3/13/9;
 }

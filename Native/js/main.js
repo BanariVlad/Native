@@ -9,7 +9,7 @@ function LeftMainMenuPopUp() {
     $('.menu li:nth-child(1)').mouseenter(function () {
         $('.smartphones').show();
     })
-
+    
     $('.menu li:nth-child(1)').mouseleave(function () {
         $('.smartphones').hide();
     })
@@ -86,17 +86,17 @@ function LeftMainMenuPopUp() {
     //APP
 
     $('.menu li:nth-child(6)').mouseenter(function () {
-        $('.app').show();
+        $('.apple').show();
     })
 
     $('.menu li:nth-child(6)').mouseleave(function () {
-        $('.app').hide();
+        $('.apple').hide();
     })
 
-    $('.app').mouseenter(function () {
+    $('.apple').mouseenter(function () {
         $(this).show();
     })
-    $('.app').mouseleave(function () {
+    $('.apple').mouseleave(function () {
         $(this).hide();
     })
 
