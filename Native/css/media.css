@@ -1,0 +1,5 @@
+@media screen and (max-width: 1600px){
+    section, .top-nav, .top-panel{
+        padding: 20px 14%;
+    }
+}
