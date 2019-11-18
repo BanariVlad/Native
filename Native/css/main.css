@@ -135,32 +135,32 @@ li{
     position: relative;
 }
 
-.menu li{
+.menu .menu__li{
     height: 50px;
     width: 100%;
     text-align: center;
-    line-height: 50px;
     display: grid;
     grid: 1fr/repeat(3, 1fr);
     align-items: center;
+    transition: .3s;
 }
 
-.menu li a{
+.menu .menu__li a{
     color: #000;
     justify-self: start;
 }
 
-.menu li a:hover{
+.menu .menu__li a:hover{
     color: rgb(24, 207, 170);
 }
 
-.menu li i{
+.menu .menu__li i{
     font-size: 25px;
     color: #18CFAB;
 }
 
-.menu li:hover{
-    background: #f6f6f6;
+.menu .menu__li:hover{
+    background-color: #F7F7F7;
 }
 
 /* ===================FOTORAMA SLIDER==================== */
@@ -733,12 +733,12 @@ h2{
 
 
 .Scarlet-nearly-footer ul li:nth-child(3){
-    background: #77B13D;
+    background: #2ECC71;
 }
 
 .Scarlet-nearly-footer ul li:nth-child(3):hover{
     transform: translateY(-20px);
-    box-shadow: 1px 1px 8px 1px #77B13D;
+    box-shadow: 1px 1px 8px 1px #2ECC71;
 }
 
 .Scarlet-nearly-footer ul li:last-child{

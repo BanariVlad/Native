@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    PopUpHide();
+    //PopUpHide();
     //eftMainMenuPopUp();
-    menuHoverHandler();
+    //menuHoverHandler();
     PopUpLoginHide();
     PopUpLogin();
 
@@ -10,12 +10,12 @@ $(document).ready(function () {
 function menuHoverHandler(){
     $('.menu li').mouseenter(function () {
         console.log($(this).data('popup'))
-        $('.popup').hide(300);
-        $(`.`+$(this).data('popup')).show(300);
+        $('.popup').hide();
+        $(`.`+$(this).data('popup')).show();
     });
 
     $('.menu li').mouseleave(function () {
-        $('.popup').hide(300);
+        $('.popup').hide();
     })
 }
 
