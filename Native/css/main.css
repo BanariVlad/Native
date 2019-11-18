@@ -13,7 +13,7 @@ a{
 
 /*================HEADER============*/
 
-.menu, .stock, .fotorama, .hot, .banner-1, .banner-2, .bestsellers li, .recommend li, .owl-grid, .popup{
+.menu, .stock, .fotorama, .hot, .banner-1, .banner-2, .bestsellers li, .recommend li, .owl-grid, .popup, .our-location{
     border-radius: 20px;
     background: #fff;
     box-shadow: 1px 1px 5px 1px #aeaeae;
@@ -686,17 +686,57 @@ li.active{
 }
 
 /* ==============Scarlet Section============== */
-.Scarlet-nearly-footer h3{
+.Scarlet-nearly-footer h2{
     color: #18CFAB;
+    text-align: center;
+    font-size: 45px;
 }
 
-h2{
-    text-align: center;
+
+.our-location{
+    height: 600px;
+    display: grid;
+    grid: repeat(5, 1fr)/repeat(5, 1fr);
+    grid-column-gap: 20px;
+    margin-bottom: 50px;
 }
 
-.Scarlet-nearly-footer p{
+.our-location iframe{
+    grid-area: 1/3/6/6;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.our-location p{
+    grid-area: 2/1/6/3;
     text-align: center;
-    margin: 50px 0;
+    padding: 0 20px;
+}
+
+.our-location h4{
+    padding: 20px;
+    grid-column: 1/3;
+    text-align: center;
+    font-size: 25px;
+}
+
+.our-location button{
+    cursor: pointer;
+    grid-area: 4/1/6/3;
+    height: 35px;
+    width: 120px;
+    place-self: center;
+    border: none;
+    background: #18CFAB;
+    border-radius: 20px;
+    color: #fff;
+    transition: .4s;
+}
+
+.our-location button:hover{
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #18CFAB;
 }
 
 .Scarlet-nearly-footer ul{
