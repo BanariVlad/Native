@@ -1,15 +1,28 @@
 $(document).ready(function () {
     PopUpHide();
-    LeftMainMenuPopUp();
+    //eftMainMenuPopUp();
+    menuHoverHandler();
     PopUpLoginHide();
     PopUpLogin();
 
 })
 
+function menuHoverHandler(){
+    $('.menu li').mouseenter(function () {
+        console.log($(this).data('popup'))
+        $('.popup').hide(300);
+        $(`.`+$(this).data('popup')).show(300);
+    });
+
+    $('.menu li').mouseleave(function () {
+        $('.popup').hide(300);
+    })
+}
+
 function LeftMainMenuPopUp() {
     //SMARTPHONES
     $('.menu li:nth-child(1)').mouseenter(function () {
-        $('.smartphones').show();
+        $('.smartphones').show(300);
     })
     
     $('.menu li:nth-child(1)').mouseleave(function () {
@@ -20,11 +33,11 @@ function LeftMainMenuPopUp() {
         $(this).show();
     })
     $('.smartphones').mouseleave(function () {
-        $(this).hide();
+        $(this).hide(300);
     })
     // =======TV
     $('.menu li:nth-child(2)').mouseenter(function () {
-        $('.tv').show();
+        $('.tv').show(300);
     })
 
     $('.menu li:nth-child(2)').mouseleave(function () {
@@ -35,12 +48,12 @@ function LeftMainMenuPopUp() {
         $(this).show();
     })
     $('.tv').mouseleave(function () {
-        $(this).hide();
+        $(this).hide(300);
     })
     // KEYBOARDS
 
     $('.menu li:nth-child(3)').mouseenter(function () {
-        $('.keyboards').show();
+        $('.keyboards').show(300);
     })
 
     $('.menu li:nth-child(3)').mouseleave(function () {
@@ -51,12 +64,12 @@ function LeftMainMenuPopUp() {
         $(this).show();
     })
     $('.keyboards').mouseleave(function () {
-        $(this).hide();
+        $(this).hide(300);
     })
     // GAMING
 
     $('.menu li:nth-child(4)').mouseenter(function () {
-        $('.gaming').show();
+        $('.gaming').show(300);
     })
 
     $('.menu li:nth-child(4)').mouseleave(function () {
@@ -67,11 +80,11 @@ function LeftMainMenuPopUp() {
         $(this).show();
     })
     $('.gaming').mouseleave(function () {
-        $(this).hide();
+        $(this).hide(300);
     })
     // Transport
     $('.menu li:nth-child(5)').mouseenter(function () {
-        $('.transport').show();
+        $('.transport').show(300);
     })
 
     $('.menu li:nth-child(5)').mouseleave(function () {
@@ -82,13 +95,13 @@ function LeftMainMenuPopUp() {
         $(this).show();
     })
     $('.transport').mouseleave(function () {
-        $(this).hide();
+        $(this).hide(300);
     })
 
     //APP
 
     $('.menu li:nth-child(6)').mouseenter(function () {
-        $('.apple').show();
+        $('.apple').show(300);
     })
 
     $('.menu li:nth-child(6)').mouseleave(function () {
@@ -99,13 +112,13 @@ function LeftMainMenuPopUp() {
         $(this).show();
     })
     $('.apple').mouseleave(function () {
-        $(this).hide();
+        $(this).hide(300);
     })
 
     //GADGETS
 
     $('.menu li:nth-child(7)').mouseenter(function () {
-        $('.gadgets').show();
+        $('.gadgets').show(300);
     })
 
     $('.menu li:nth-child(7)').mouseleave(function () {
@@ -116,13 +129,13 @@ function LeftMainMenuPopUp() {
         $(this).show();
     })
     $('.gadgets').mouseleave(function () {
-        $(this).hide();
+        $(this).hide(300);
     })
 
     //Computers
 
     $('.menu li:nth-child(8)').mouseenter(function(){
-        $('.computers').show();
+        $('.computers').show(300);
     })
 
     $('.menu li:nth-child(8)').mouseleave(function(){
@@ -133,13 +146,13 @@ function LeftMainMenuPopUp() {
         $(this).show();
     })
     $('.computers').mouseleave(function(){
-        $(this).hide();
+        $(this).hide(300);
     })
 
     //AUDIO
 
     $('.menu li:nth-child(9)').mouseenter(function(){
-        $('.audio').show();
+        $('.audio').show(300);
     })
 
     $('.menu li:nth-child(9)').mouseleave(function(){
@@ -150,13 +163,13 @@ function LeftMainMenuPopUp() {
         $(this).show();
     })
     $('.audio').mouseleave(function(){
-        $(this).hide();
+        $(this).hide(300);
     })
 
     //SERVICES
 
     $('.menu li:nth-child(10)').mouseenter(function(){
-        $('.services').show();
+        $('.services').show(300);
     })
 
     $('.menu li:nth-child(10)').mouseleave(function(){
@@ -167,7 +180,7 @@ function LeftMainMenuPopUp() {
         $(this).show();
     })
     $('.services').mouseleave(function(){
-        $(this).hide();
+        $(this).hide(300);
     })
 
 }
@@ -189,4 +202,8 @@ function PopUpLogin(){
         $('.popupLogin').hide();
         $('body').css('overflow' , 'visible')
     })
+}
+
+function MainMenuPopUp(){
+    $()
 }

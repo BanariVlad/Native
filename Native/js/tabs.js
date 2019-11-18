@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 
 function AppleTabs(){
-    $(".tab-content").not(":first").hide();
+    $(".tab-content").not(":first").hide(300);
         $(".Apple-Nav li").click(function(){
             $(".Apple-Nav li").removeClass("active").eq($(this).index()).addClass("active");
             $(".tab-content").hide().eq($(this).index()).fadeIn()
