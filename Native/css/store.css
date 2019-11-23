@@ -1,0 +1,42 @@
+.glide__slide section{
+    width: 100%;
+    grid-area: 1/1/4/4;
+    display: grid;
+    grid: repeat(7, 1fr)/repeat(5, 1fr);
+    height: 200vh;
+    grid-gap: 20px;
+}
+
+.glide__slide aside{
+    grid-column: 1/6;
+}
+
+.glide__slide ul{
+    grid-area: 2/1/8/6;
+    display: grid;
+    grid: repeat(7, 1fr)/repeat(4, 1fr);
+}
+
+.glide__slide ul li div{
+    font-size: 15px;
+}
+
+.glide__slide ul li i{
+    transition: .4s;
+    color: #333333;
+    font-size: 20px;
+}
+
+.glide__slide ul li i:nth-child(2):hover{
+    color: #E80064;
+    transform: scaleX(-1);
+}
+
+.glide__slide ul li .credit{
+    grid-row: 4/6;
+    align-self: center;
+}
+
+.glide__slide ul li div:nth-last-child(3){
+    align-self: center;
+}

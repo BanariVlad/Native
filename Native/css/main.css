@@ -575,7 +575,6 @@ h3{
 
 .owl-grid span{
     grid-area: 8/1/9/2;
-    color: ;
 }
 
 .owl-grid div{
@@ -583,24 +582,23 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 15px;
     cursor: pointer;
     height: 30px;
     width: 30px;
-    border: 1px solid #bebebe;
-    border-radius: 50%;
+    transition: .5s;
 }
 
 .owl-grid div i{
-    color: #bebebe;
+    color: #333;
     font-size: 15px;
 }
 
-.owl-grid div:hover{
+.owl-grid div:nth-last-child(3):hover{
+    transform: rotate(360deg);
     border-color: #FC8507;
 }
 
-.owl-grid div:hover i{
+.owl-grid div:nth-last-child(3):hover i{
     color: #FC8507;
 }
 
@@ -849,21 +847,23 @@ footer section article a{
     color: #fff;
     transition: .3s;
     text-align: center;
+    font-size: 12px;
 }
 
 footer section article a:hover{
-    transform: scale(1.15, 1.15);
+    transform: scale(1.1, 1.1);
     color: #18CFAB;
 }
 
-footer .footer-icons{
+footer div{
     display: flex;
     height: 10%;
     align-items: center;
     justify-content: center;
+    padding: 0 15%;
 }
 
-footer .footer-icons i{
+footer div i{
     color: #18CFAB;
     margin: 0 15px;
     font-size: 25px;
@@ -871,14 +871,21 @@ footer .footer-icons i{
 
 footer section:last-child{
     background: #1C2A33;
-    height: 40%;
+    height: 30%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
 footer section:last-child img{
-    height: 60px;
+    height: 40px;
     cursor: pointer;
+}
+
+footer section:last-child p{
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+    padding: 0 200px;
 }
 
