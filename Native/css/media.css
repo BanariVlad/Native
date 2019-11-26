@@ -1,5 +1,67 @@
+
+@media screen and (max-width: 1680px){
+    section, .top-nav, .top-panel{
+        padding: 20px 15%;
+    }
+}
+
 @media screen and (max-width: 1600px){
     section, .top-nav, .top-panel{
         padding: 20px 14%;
+    }
+}
+
+@media screen and (max-width: 1534px){
+    section, .top-nav, .top-panel{
+        padding: 20px 13%;
+    }
+}
+
+@media screen and (max-width: 1430px){
+    .Scarlet-nearly-footer ul li{
+        width: 220px;
+        height: 130px;
+    }
+    .Scarlet-nearly-footer ul li img{
+        width: 80%;
+    }
+    .Scarlet-nearly-footer ul li span{
+        font-size: 15px;
+    }
+    footer section:last-child p{
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    section, .top-nav, .top-panel{
+        padding: 20px 12%;
+    }
+}
+
+@media screen and (max-width: 1330px){
+    section, .top-nav, .top-panel{
+        padding: 20px 9%;
+    }
+}
+
+@media screen and (max-width: 1230px){
+    section, .top-nav, .top-panel{
+        padding: 20px 6%;
+    }
+}
+
+@media screen and (max-width: 1137px){
+    section, .top-nav, .top-panel{
+        padding: 20px 1%;
+    }
+    .smartphones, .keyboards, .apple, .gadgets, .computers, .services{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .recommend{
+        grid-template-rows: 1fr 1fr;
     }
 }
