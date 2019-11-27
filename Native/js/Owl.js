@@ -5,10 +5,10 @@ $('.owl-carousel').owlCarousel({
     autoplayHoverPause:true,
     margin:10,
     responsive:{
-        600:{
+        1000:{
             items:3
         },
-        1000:{
+        1200:{
             items:4
         }
     }

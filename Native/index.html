@@ -61,6 +61,9 @@
                 <a href="#"><i class="fas fa-heart"></i> Favourites</a>
                 <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
                 <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
+                <i class="fas fa-heart hide-icon"></i>
+                <i class="fas fa-shopping-cart hide-icon"></i>
+                <i class="fas fa-exchange-alt hide-icon"></i>
             </div>
         </div>
     </header>
@@ -1043,7 +1046,7 @@
             </article>
             <article>
                 <h5>Contacts</h5>
-                <a href="#">email: Scarlett@gmail.com</a>
+                <a href="#">email: Scarlet@gmail.com</a>
                 <a href="#">gsm: 000-666-000</a>
                 <a href="#">Details</a>
             </article>
@@ -1089,7 +1092,12 @@
     <script>
         const config = {
             type: 'carousel',
-            perView: 3
+            perView: 3,
+            breakpoints: {
+                958:{
+                    perView: 2,
+                }
+            }
         }
         new Glide('.glide', config).mount()
     </script>

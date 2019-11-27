@@ -81,6 +81,26 @@ a{
     text-align: center;
 }
 
+.hide-icon{
+    display: none;
+    cursor: pointer;
+    color: #fff;
+    margin: 0 4px;
+    transition: 0.2s;
+}
+
+.fa-heart:hover{
+    color: #E10063
+}
+
+.fa-shopping-cart:hover{
+    color: #FC8507;
+}
+
+.fa-exchange-alt:hover{
+    color: #1A6EB8;
+}
+
 .buttons a{
     color: #fff;
     margin: 0 4px;
@@ -397,6 +417,10 @@ li{
     height: 100%;
     width: 100%;
     border-radius: 20px;
+}
+
+.bestsellers span{
+    text-align: center;
 }
 
 /* ============RECOMMENDATIONS============= */
