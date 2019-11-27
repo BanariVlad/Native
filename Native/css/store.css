@@ -11,6 +11,10 @@
     grid-column: 1/6;
 }
 
+.glide__slide img{
+    height: 200px;
+}
+
 .glide__slide ul{
     grid-area: 2/1/8/6;
     display: grid;
@@ -39,4 +43,35 @@
 
 .glide__slide ul li div:nth-last-child(3){
     align-self: center;
+}
+
+.glide__slide section aside ul{
+    display: grid;
+    grid: repeat(2, 1fr)/repeat(5, 1fr);
+    place-items: center;
+    grid-gap: 15px;
+    height: 50%;
+}
+
+.glide__slide section aside ul li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.glide__slide section aside ul li:hover{
+    color: #18CFAB;
+}
+
+.glide__slide section aside ul li i{
+    font-size: 20px;
+    margin: 0 0 5px 5px;
+}
+
+.glide__slide section aside ul li:hover i{
+    color: #18CFAB;
 }

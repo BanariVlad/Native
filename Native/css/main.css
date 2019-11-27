@@ -13,7 +13,7 @@ a{
 
 /*================HEADER============*/
 
-.menu, .stock, .fotorama, .hot, .banner-1, .banner-2, .bestsellers li, .recommend li, .owl-grid, .popup, .our-location{
+.menu, .stock, .fotorama, .hot, .banner-1, .banner-2, .bestsellers li, .recommend li, .owl-grid, .popup, .our-location, .glide__slide section aside ul{
     border-radius: 20px;
     background: #fff;
     box-shadow: 1px 1px 5px 1px #aeaeae;
