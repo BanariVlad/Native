@@ -278,6 +278,7 @@ li{
 
 .glide__slide img{
     grid-row: 1/4;
+    height: 100px;
 }
 
 .glide__slide span{
