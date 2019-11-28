@@ -37,7 +37,7 @@
 }
 
 .glide__slide ul li .credit{
-    grid-row: 4/6;
+    grid-row: 3/6;
     align-self: center;
 }
 
@@ -54,12 +54,12 @@
 }
 
 .glide__slide section aside ul li{
+    position: relative;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     transition: .3s;
 }
 
@@ -74,4 +74,142 @@
 
 .glide__slide section aside ul li:hover i{
     color: #18CFAB;
+}
+
+/* ANIMATION CASHBACK CREDIT NEW */
+
+.credit, .cashback, .new{
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: center left;
+}
+
+.owl-grid:hover .new{
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.owl-grid:hover .cashback{
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.owl-grid:hover .credit{
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+
+
+/* ARROWS NEXT-PREVIOUS */
+
+.glide__arrow{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #18CFAB;
+    background: none;
+    color: #1C2A33;
+    transition: 0.3s;
+    grid-column: 2/4;
+    font-size: 15px;
+    z-index: 999;
+    display: block;
+    color: #18CFAB;
+    border: 1px solid #18CFAB;
+    position: absolute;
+    top: 10%;
+}
+
+.glide__arrow--right{
+    right: 0;
+}
+
+.glide__arrow--left:hover{
+    padding: 0 20px 0 0;
+}
+
+.glide__arrow--right:hover{
+    padding: 0 0 0 20px;
+}
+
+.glide__arrow:hover{
+    color: purple;
+    background: #18CFAB;
+}
+
+/* PRICE INPUT RANGE */
+
+.ui-state-default{
+    border-radius: 20px;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+    background: #18CFAB;
+    border: 1px solid #333333
+}
+
+#amount{
+    text-align: center;
+    border: 0; 
+    color: #18CFAB; 
+    font-weight: bold;
+}
+
+
+/* FILTERS */
+
+.popupFilter{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    opacity: 0;
+    transition: .4s;
+    transform-origin: top center;
+    transform: scaleX(0);
+    z-index: 9999;
+    text-align: center;
+    display: grid;
+    grid-gap: 15px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.popupFilter span{
+    display: block;
+    text-align: center;
+    color: #333;
+    transition: .3s;
+    height: 100%;
+    line-height: 40px;
+}
+
+.popupFilter span:hover{
+    padding: 0 0 0 15px;
+    background: #18CFAB;
+    color: #fff;
+}
+
+.glide__slide aside ul li input{
+    display: none;
+}
+
+.glide__slide aside ul li label{
+    cursor: pointer;
+}
+
+.glide__slide aside ul li:first-child input{
+    display: block;
+}
+
+#FilterColor:checked ~ .popupFilter, #FilterSize:checked ~ .popupFilter, #FilterType:checked ~ .popupFilter, #FilterBrand:checked ~ .popupFilter, #FilterMemory:checked ~ .popupFilter, #FilterProcessor:checked ~ .popupFilter, #FilterSystem:checked ~ .popupFilter, #FilterSIM:checked ~ .popupFilter, #FilterSD:checked ~ .popupFilter{
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+#FilterColor:checked ~ i, #FilterSize:checked ~ i, #FilterType:checked ~ i, #FilterBrand:checked ~ i, #FilterMemory:checked ~ i, #FilterProcessor:checked ~ i, #FilterSystem:checked ~ i, #FilterSIM:checked ~ i, #FilterSD:checked ~ i{
+    transform: rotate(180deg);
 }

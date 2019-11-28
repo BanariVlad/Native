@@ -13,7 +13,7 @@ a{
 
 /*================HEADER============*/
 
-.menu, .stock, .fotorama, .hot, .banner-1, .banner-2, .bestsellers li, .recommend li, .owl-grid, .popup, .our-location, .glide__slide section aside ul{
+.menu, .stock, .fotorama, .hot, .banner-1, .banner-2, .bestsellers li, .recommend li, .owl-grid, .popup, .our-location, .glide__slide section aside ul, .popupFilter{
     border-radius: 20px;
     background: #fff;
     box-shadow: 1px 1px 5px 1px #aeaeae;
@@ -266,71 +266,6 @@ li{
     overflow: hidden;
 }
 
-.glide, .glide__track, .glide__slides, .glide__slide{
-    height: 100%;
-}
-
-.glide__slide{
-    display: grid;
-    grid: repeat(3, 1fr)/repeat(3, 1fr);
-    place-items: center;
-}
-
-.glide__slide img{
-    grid-row: 1/4;
-    height: 100px;
-}
-
-.glide__slide span{
-    grid-area: 1/2/3/4;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.glide__slide span:hover{
-    color: #18CFAB;
-}
-
-.glide__slide div{
-    align-self: flex-end;
-    grid-area: 1/2/3/4;
-    font-size: 20px;
-}
-
-.glide__slide button{
-   outline: none;
-   cursor: pointer;
-   width: 70%;
-   height: 40%;
-   border: 2px solid #18CFAB;
-   background: none;
-   color: #1C2A33;
-   transition: 0.3s;
-   grid-column: 2/4;
-   font-size: 15px;
-}
-
-.glide__slide button:hover{
-    width: 80%;
-    color: purple;
-    border-radius: 10px;
-}
-
-.glide__arrow{
-    color: #18CFAB;
-    border: 1px solid #18CFAB;
-    display: none;
-}
-
-.glide:hover .glide__arrow{
-    display: block;
-}
-
-.glide__arrow:hover{
-    color: #fff;
-    background: #18CFAB;
-    border: none;
-}
 /* ==================BANNERS================ */
 .banner-1, .banner-2{
     display: grid;
@@ -652,7 +587,7 @@ h3{
 }
 
 .owl-grid .credit{
-    grid-area: 4/1/5/3;
+    grid-area: 2/1/4/3;
     width: 60%;
     background-color: rgba(213,79,139, 0.7);
 }

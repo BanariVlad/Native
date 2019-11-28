@@ -7,8 +7,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/glide.core.min.css">
-    <link rel="stylesheet" href="css/glide.theme.min.css">
+    <script src="js/Price.js"></script>
+    <!-- <link rel="stylesheet" href="css/glide.theme.min.css"> -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="img/IconTittle.png">
     <link rel="stylesheet" href="css/popup.css">
@@ -72,18 +74,123 @@
                     <section>
                         <aside>
                             <ul>
-                                <li>Price <i class="fas fa-sort-down"></i>
-
+                                <li>
+                                    <div>
+                                        <p>
+                                            <label for="amount"></label>
+                                            <input type="text" id="amount" readonly style="">
+                                        </p>
+                                        <div id="slider-range"></div>
+                                    </div>
                                 </li>
-                                <li>Color <i class="fas fa-sort-down"></i></li>
-                                <li>Size <i class="fas fa-sort-down"></i></li>
-                                <li>Type <i class="fas fa-sort-down"></i></li>
-                                <li>Brand <i class="fas fa-sort-down"></i></li>
-                                <li>Memory <i class="fas fa-sort-down"></i></li>
-                                <li>Processor <i class="fas fa-sort-down"></i></li>
-                                <li>System <i class="fas fa-sort-down"></i></li>
-                                <li>SIM <i class="fas fa-sort-down"></i></li>
-                                <li>SD <i class="fas fa-sort-down"></i></li>
+                                <li>
+                                    <input type="checkbox" id="FilterColor">
+                                    <label for="FilterColor">Color</label>
+                                    <i class="fas fa-sort-down"></i>
+                                    <div class="popupFilter">
+                                        <span>Black</span>
+                                        <span>Yellow</span>
+                                        <span>Green</span>
+                                        <span>Red</span>
+                                        <span>White</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="FilterSize">
+                                    <label for="FilterSize">Size</label>
+                                    <i class="fas fa-sort-down"></i>
+                                    <div class="popupFilter">
+                                        <span>4.7"</span>
+                                        <span>5"</span>
+                                        <span>5.5"</span>
+                                        <span>6"</span>
+                                        <span>6.5"</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="FilterType">
+                                    <label for="FilterType">Type</label>
+                                    <i class="fas fa-sort-down"></i>
+                                    <div class="popupFilter">
+                                        <span>Dual Core</span>
+                                        <span>Quad Core</span>
+                                        <span>Octa Core</span>
+                                        <span>Ultra Core</span>
+                                        <span>Omega Core</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="FilterBrand">
+                                    <label for="FilterBrand">Brand</label>
+                                    <i class="fas fa-sort-down"></i>
+                                    <div class="popupFilter">
+                                        <span>Samsung</span>
+                                        <span>Meizu</span>
+                                        <span>Xiaomi</span>
+                                        <span>Apple</span>
+                                        <span>Honor</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="FilterMemory">
+                                    <label for="FilterMemory">Memory</label>
+                                    <i class="fas fa-sort-down"></i>
+                                    <div class="popupFilter">
+                                        <span>2/16</span>
+                                        <span>3/16</span>
+                                        <span>4/32</span>
+                                        <span>6/64</span>
+                                        <span>8/128</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="FilterProcessor">
+                                    <label for="FilterProcessor">Processor</label>
+                                    <i class="fas fa-sort-down"></i>
+                                    <div class="popupFilter">
+                                        <span>Snapdragon</span>
+                                        <span>Aquil</span>
+                                        <span>Talon</span>
+                                        <span>Juri</span>
+                                        <span>Spirit</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="FilterSystem">
+                                    <label for="FilterSystem">System</label>
+                                    <i class="fas fa-sort-down"></i>
+                                    <div class="popupFilter">
+                                        <span>Android</span>
+                                        <span>iOS</span>
+                                        <span>Windows</span>
+                                        <span>MiUI</span>
+                                        <span>LitePhone</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="FilterSIM">
+                                    <label for="FilterSIM">SIM</label>
+                                    <i class="fas fa-sort-down"></i>
+                                    <div class="popupFilter">
+                                        <span>Solo</span>
+                                        <span>Dual-SIM</span>
+                                        <span>Tetra-SIM</span>
+                                        <span>Quadra-SIM</span>
+                                        <span>Penta-SIM</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="FilterSD">
+                                    <label for="FilterSD">SD</label>
+                                    <i class="fas fa-sort-down"></i>
+                                    <div class="popupFilter">
+                                        <span>16GB</span>
+                                        <span>32GB</span>
+                                        <span>64GB</span>
+                                        <span>128GB</span>
+                                        <span>256GB</span>
+                                    </div>
+                                </li>
                             </ul>
                         </aside>
                         <ul>
@@ -276,7 +383,12 @@
                 <li class="glide__slide">Services</li>
             </ul>
         </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">Previous</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Next</button>
+        </div>
     </main>
+    
 
     <footer>
         <section>
@@ -328,10 +440,13 @@
 
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
             const config = {
                 type: 'carousel',
-                perView: 1
+                perView: 1,
+                dragThreshold: false,
             }
             new Glide('.glide', config).mount()
         </script>
