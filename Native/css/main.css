@@ -13,7 +13,7 @@ a{
 
 /*================HEADER============*/
 
-.menu, .stock, .fotorama, .hot, .banner-1, .banner-2, .bestsellers li, .recommend li, .owl-grid, .popup, .our-location, .glide__slide section aside ul, .popupFilter{
+.menu, .stock, .fotorama, .hot, .banner-1, .banner-2, .bestsellers li, .recommend li, .grid-item, .popup, .our-location, .glide__slide section aside ul, .popupFilter{
     border-radius: 20px;
     background: #fff;
     box-shadow: 1px 1px 5px 1px #aeaeae;
@@ -516,7 +516,7 @@ h3{
     padding: 10px;
 }
 
-.owl-grid{
+.grid-item{
     display: grid;
     grid: repeat(9, 1fr)/repeat(3, 1fr);
     height: 350px;
@@ -525,19 +525,19 @@ h3{
     transition: 0.3s;
 }
 
-.owl-grid img{
+.grid-item img{
     grid-area: 2/1/8/4;
 }
 
-.owl-grid h4{
+.grid-item h4{
     grid-column: 1/4;
 }
 
-.owl-grid span{
+.grid-item span{
     grid-area: 8/1/9/2;
 }
 
-.owl-grid div{
+.grid-item div{
     grid-area: 8/3/9/4;
     display: flex;
     align-items: center;
@@ -548,57 +548,57 @@ h3{
     transition: .5s;
 }
 
-.owl-grid div i{
+.grid-item div i{
     color: #333;
     font-size: 15px;
 }
 
-.owl-grid div:nth-last-child(3):hover{
+.grid-item div:nth-last-child(3):hover{
     transform: rotate(360deg);
     border-color: #FC8507;
 }
 
-.owl-grid div:nth-last-child(3):hover i{
+.grid-item div:nth-last-child(3):hover i{
     color: #FC8507;
 }
 
-.owl-grid hr{
+.grid-item hr{
     grid-area: 9/1/9/4;
     align-self: flex-start;
     width: 100%;
 }
 
-.owl-grid p{
+.grid-item p{
     grid-area: 9/1/10/4;
     text-align: center;
     color: #bebebe;
 }
 
-.owl-grid:hover{
+.grid-item:hover{
    transform: translateY(-10px);
    box-shadow: 1px 1px 5px 1px #1C2A33;
    cursor: pointer;
 }
 
-.owl-grid .cashback{
+.grid-item .cashback{
     grid-area: 2/1/4/3;
     width: 80%;
     background-color: rgba(24,206,170, 0.7);
 }
 
-.owl-grid .credit{
-    grid-area: 2/1/4/3;
+.grid-item .credit{
+    grid-area: 3/1/6/3;
     width: 60%;
     background-color: rgba(213,79,139, 0.7);
 }
 
-.owl-grid .new{
+.grid-item .new{
     grid-area: 5/1/7/3;
     width: 40%;
     background-color: rgba(85,173,245, 0.7);
 }
 
-.owl-grid .cashback , .owl-grid .credit, .owl-grid .new{
+.grid-item .cashback , .grid-item .credit, .grid-item .new{
     border-radius: 0;
     z-index: 5;
     height: 35px;

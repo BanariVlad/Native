@@ -4,7 +4,6 @@ $(document).ready(function () {
     //menuHoverHandler();
     PopUpLoginHide();
     PopUpLogin();
-
 })
 
 function menuHoverHandler(){
@@ -17,6 +16,12 @@ function menuHoverHandler(){
     $('.menu li').mouseleave(function () {
         $('.popup').hide();
     })
+}
+
+function outputUpdate(vol) {
+    var output = document.querySelector('.ValueNumber');
+    output.value = vol;
+    output.style.left = vol + 'px';
 }
 
 function LeftMainMenuPopUp() {

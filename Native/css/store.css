@@ -84,17 +84,17 @@
     transform-origin: center left;
 }
 
-.owl-grid:hover .new{
+.grid-item:hover .new{
     opacity: 1;
     transform: scaleX(1);
 }
 
-.owl-grid:hover .cashback{
+.grid-item:hover .cashback{
     opacity: 1;
     transform: scaleX(1);
 }
 
-.owl-grid:hover .credit{
+.grid-item:hover .credit{
     opacity: 1;
     transform: scaleX(1);
 }
@@ -201,9 +201,49 @@
     cursor: pointer;
 }
 
-.glide__slide aside ul li:first-child input{
+.glide__slide aside ul li:nth-child(3) input{
     display: block;
 }
+
+.input-range {
+    position: relative;
+    border-radius: 8px;
+    width: 100%;
+    height: 18px;
+    align-self: flex-end;
+}
+
+output{
+    position: absolute;
+    left: 0;
+    top: -35px;
+    padding: 3px 5px;
+    background: #18CFAB;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#PhoneSlider {
+    position: relative;
+    left: 3px;
+    width: 100%;
+    height: 10px;
+    background: #18CFAB;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+#PhoneSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #18CFAB;
+    box-shadow: 0 0 2px #222;
+}
+
 
 #FilterColor:checked ~ .popupFilter, #FilterSize:checked ~ .popupFilter, #FilterType:checked ~ .popupFilter, #FilterBrand:checked ~ .popupFilter, #FilterMemory:checked ~ .popupFilter, #FilterProcessor:checked ~ .popupFilter, #FilterSystem:checked ~ .popupFilter, #FilterSIM:checked ~ .popupFilter, #FilterSD:checked ~ .popupFilter{
     opacity: 1;
@@ -213,3 +253,16 @@
 #FilterColor:checked ~ i, #FilterSize:checked ~ i, #FilterType:checked ~ i, #FilterBrand:checked ~ i, #FilterMemory:checked ~ i, #FilterProcessor:checked ~ i, #FilterSystem:checked ~ i, #FilterSIM:checked ~ i, #FilterSD:checked ~ i{
     transform: rotate(180deg);
 }
+
+
+/* TV */
+
+#TVFilterColor:checked ~ i, #TVFilterSize:checked ~ i, #TVFilterType:checked ~ i, #TVFilterBrand:checked ~ i, #TVFilterMemory:checked ~ i, #TVFilterProcessor:checked ~ i, #TVFilterSystem:checked ~ i, #TVFilterSIM:checked ~ i, #TVFilterSD:checked ~ i{
+    transform: rotate(180deg);
+}
+
+#TVFilterColor:checked ~ .popupFilter, #TVFilterSize:checked ~ .popupFilter, #TVFilterType:checked ~ .popupFilter, #TVFilterBrand:checked ~ .popupFilter, #TVFilterMemory:checked ~ .popupFilter, #TVFilterProcessor:checked ~ .popupFilter, #TVFilterSystem:checked ~ .popupFilter, #TVFilterSIM:checked ~ .popupFilter, #TVFilterSD:checked ~ .popupFilter{
+    opacity: 1;
+    transform: scaleX(1);
+}
+
